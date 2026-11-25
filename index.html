@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Gustavo Henrique Santana - Estudante de ADS</title>
+  <meta name="description" content="Portfólio de Gustavo Henrique Santana de Souza, estudante de Análise e Desenvolvimento de Sistemas.">
+
+  <link rel="icon" href="./IMG/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./CSS/style.css">
+  <script src="./JS/script.js" defer></script>
+</head>
+<body>
+
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="topo" id="topo">
+    <div class="container topo-conteudo">
+      <a class="logo" href="#inicio" aria-label="Início">
+        <img src="./IMG/favicon.svg" alt="" width="36" height="36">
+        <span>Gustavo Henrique Santana de Souza</span>
+      </a>
+
+      <button class="botao-menu" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu" hidden>
+        <span aria-hidden="true">☰</span>
+      </button>
+
+      <nav aria-label="Principal">
+        <ul class="menu" id="menu">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#formacao">Formação</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo" tabindex="-1">
+
+    <section class="apresentacao" id="inicio" tabindex="-1">
+      <div class="container apresentacao-conteudo">
+
+        <img class="foto" src="./IMG/WhatsApp%20Image%202026-11-25%20at%2017.30.01.jpeg" alt="Foto de perfil de Gustavo Henrique Santana de Souza" width="220" height="220">
+
+        <div class="apresentacao-texto">
+          <p class="saudacao">Olá, eu sou</p>
+          <h1>GUSTAVO HENRIQUE SANTANA DE SOUZA</h1>
+          <p class="cargo">ESTUDANTE DE ANÁLISE E DESENVOLVIMENTO DE SISTEMAS
+          </p>
+          <p class="resumo">EU ESTUDO ANÁLISE E DESENVOLVIMENTO DE SISTEMAS, GOSTO DE CRIAR PROJETOS QUE AUTOMATIZAM A VIDA DAS PESSOAS E MEU OBJETIVO PROFISSIONAL É CRESCER E DESENVOLVER CADA VEZ MAIS CONHECIMENTO PRA QUE AS PESSOAS NÃO SOFAM TANTO PARA REALIZAR ALGUMAS TAREFAS HOJE EM DIA. 
+          </p>
+
+          <div class="botoes">
+            <a class="botao" href="#projetos">Ver projetos</a>
+            <a class="botao botao-secundario" href="#contato">Entrar em contato</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="secao" id="sobre" tabindex="-1">
+      <div class="container revelar">
+        <h2>Sobre mim</h2>
+        <p>
+            EU SOU DA CIDADE DE SALTO/SP E O QUE ME LEVOU A ESTUDAR TECNOLOGIA FOI A FACILIDADE QUE EU TENHO EM RESOLVER PROBLEMAS O QUE CASA PERFEITAMENTE EM QUE EU ATUALMENTE ESTUDO (ADS),
+        </p>
+        <p>
+            EU PROCURO UMA VAGA EM ESTÁGIO OU COMO JUNIOR PARA QUE EU POSSA DESENVOLVER CADA VEZ MAIS EXPERIÊNCIA DE TRABALHO E CONHECIMENTO NA DINÂMICA DE RESOLUCIONAR PROBLEMAS.
+        </p>
+      </div>
+    </section>
+
+    <section class="secao secao-alternada" id="formacao" tabindex="-1">
+      <div class="container">
+        <h2 class="revelar">Formação</h2>
+
+        <ul class="lista-formacao">
+          <li class="item-formacao revelar">
+            <h3>ANÁLISE E DESENVOLVIMENTO DE SISTEMAS</h3>
+            <p class="instituicao">CEUNSP - NOSSA SENHORA DO PATROCÍNIO</p>
+            <p class="periodo">ÍNICIO EM 2026, CONCLUSÃO EM 2028</p>
+          </li>
+
+          <li class="item-formacao revelar">
+            <h3>Ensino Médio</h3>
+            <p class="instituicao">ESCOLA ESTADUAL PROFESSORA LEONOR FERNANDES DA SILVA</p>
+            <p class="periodo">CONCLUÍDO EM 2025</p>
+          </li>
+
+
+        </ul>
+      </div>
+    </section>
+
+    <section class="secao" id="habilidades" tabindex="-1">
+      <div class="container">
+        <h2 class="revelar">Habilidades</h2>
+        <ul class="lista-habilidades revelar">
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>Rápido em Resolver problemas</li>
+          <li>JavaScript</li>
+          <li>Git e GitHub</li>
+          <li>Linguagem C</li>
+          <li>Python</li>
+          <li>Proativo</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="secao secao-alternada" id="projetos" tabindex="-1">
+      <div class="container">
+        <h2 class="revelar">Projetos</h2>
+
+        <div class="filtros revelar" hidden role="group" aria-label="Filtrar projetos por tecnologia">
+          <button class="filtro ativo" type="button" data-filtro="todos" aria-pressed="true">Todos</button>
+          <button class="filtro" type="button" data-filtro="python" aria-pressed="false">Python</button>
+          <button class="filtro" type="button" data-filtro="csv" aria-pressed="false">CSV</button>
+          <button class="filtro" type="button" data-filtro="json" aria-pressed="false">JSON</button>
+        </div>
+
+        <p class="visualmente-oculto" id="resultado-filtro" role="status"></p>
+
+        <div class="grade-projetos">
+
+          <article class="card-projeto revelar" data-tec="python">
+            <!-- ✏️ PREENCHER: salve a captura em IMG/projeto-1.jpg, preencha o alt e descomente a imagem. -->
+            <!-- <img src="./IMG/projeto-1.jpg" alt="[DESCRIÇÃO DA CAPTURA]" width="600" height="340"> -->
+            <div class="card-conteudo">
+              <h3>Planejado Financeiro</h3>
+              <p>Um projeto desenvolvido em Python com o objetivo de auxiliar no planejamento financeiro mensal, permitindo registrar o salário, cadastrar despesas e calcular o valor destinado aos investimentos e o dinheiro disponível para gastar.</p>
+              <ul class="tecnologias">
+                <li>PYTHON</li>
+              </ul>
+              <div class="links-projeto">
+                <a href="https://github.com/gust4-sz/Projeto-investimento-python">Código</a>
+                <a href="https://gust4-sz.github.io/Projeto-investimento-python/">Ver online</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card-projeto revelar" data-tec="python csv json">
+            <!-- ✏️ PREENCHER: salve a captura em IMG/projeto-2.jpg, preencha o alt e descomente a imagem. -->
+            <!-- <img src="./IMG/projeto-2.jpg" alt="[DESCRIÇÃO DA CAPTURA]" width="600" height="340"> -->
+            <div class="card-conteudo">
+              <h3>Data Vision</h3>
+              <p>DataVision é um projeto de análise de vendas da empresa fictícia Nexus Commerce. O sistema importa CSV e Excel, identifica inconsistências, prepara os dados, calcula indicadores comerciais, gera gráficos e relatórios e armazena vendas em SQLite.</p>
+              <ul class="tecnologias">
+                <li>Python</li>
+                <li>CSV</li>
+                <li>gitbash</li>
+                <li>powershell</li>
+                <li>JSON</li>
+              </ul>
+              <div class="links-projeto">
+                <a href="https://github.com/gust4-sz/PROGRAMAS-TESTE">Código</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao" id="contato" tabindex="-1">
+      <div class="container">
+        <h2 class="revelar">Contato</h2>
+        <p class="revelar">Caso haja interesse, Fale comigo:</p>
+
+        <ul class="lista-contato revelar">
+          <li>
+            <span class="rotulo-contato">E-mail</span>
+            <a href="mailto:gusouza777@gmail.com">gusouza777@gmail.com</a>
+          </li>
+          <li>
+            <span class="rotulo-contato">LinkedIn</span>
+            <a href="https://www.linkedin.com/in/gustavo-henrique-santana-de-souza-8069112a8/">https://www.linkedin.com/in/gustavo-henrique-santana-de-souza-8069112a8/</a>
+          </li>
+          <li>
+            <span class="rotulo-contato">GitHub</span>
+            <a href="https://github.com/gust4-sz">https://github.com/gust4-sz</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <p>© <span id="ano"></span> Gustavo Henrique Santana de Souza. Feito com HTML, CSS e JavaScript.</p>
+      <p><a href="#inicio">Voltar ao topo</a></p>
+    </div>
+  </footer>
+
+  <a class="voltar-topo" href="#inicio" aria-label="Voltar ao topo">↑</a>
+
+</body>
+</html>
